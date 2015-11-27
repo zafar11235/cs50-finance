@@ -8,4 +8,4 @@ After cloning this repository, run:
 
     python manage.py runserver
     
-to start the server and see how can you improve this project.
+to start the server and see how you can improve this project.
