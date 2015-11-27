@@ -1,0 +1,74 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>C$50 Finance</title>
+
+    <link rel="stylesheet" href="{% static 'css/jasny-bootstrap.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/navmenu-reveal.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <script src="{% static 'js/jquery-2.1.4.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jasny-bootstrap.min.js' %}"></script>
+
+
+  </head>
+
+  <body>
+
+    {% include 'navmenu.html' %}
+
+    <div class="canvas"> 
+
+      <div class="navbar navbar-default navbar-fixed-top">
+        <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-recalc="false" data-target=".navmenu" data-canvas=".canvas">
+        <!-- DELETE data-autohide = false for auto close-->
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="jumbotron">
+        <div class= "container">
+        <div class = "col-md-6">
+          <h1>Welcome to C$50</h1>
+          <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+          <p>To see the difference between static and fixed top navbars, just scroll.</p>
+          <p>
+          <a class="btn btn-lg btn-primary" href="#" role="button">View Details</a>
+          </p>
+        </div>
+        </div>
+      </div>
+
+      <div class="container main-container">
+        <div class="col-md-10 ">
+
+
+        <div class="page-header">
+          <h1>Welcome to C$50 Finance</h1>
+        </div>
+
+        <p class="lead">This example demonstrates the use of the offcanvas plugin with a reveal effect.</p>
+        <p>On the contrary of the push effect, the menu doesn't move with the canvas.</p>
+        <p>You get the reveal effect by wrapping the content in a div and setting the <code>canvas</code> option to target that div.</p>
+        <p>Note that in this example, the navmenu doesn't have the <code>offcanvas</code> class, but is placed under the canvas by setting the <code>z-index</code>.</p>
+        <p>Also take a look at the examples for a navmenu with <a href="#">slide in effect</a> and <a href="#">push effect</a>.</p>
+
+        </div><!-- col-md-10 -->
+      </div><!-- /.container -->
+
+    </div><!-- /.canvas -->
+    
+
+  </body>
+</html>
