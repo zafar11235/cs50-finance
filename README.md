@@ -1,7 +1,7 @@
 # cs50-finance
 CS50 FInance Web App's Django Version
 
-The famous CS50 Finance webapp written in Python using Django 1.8
+The famous [CS50 Finance](https://finance.cs50.net/login.php) webapp written in Python using Django 1.8
 
 You need [Django 1.8](https://docs.djangoproject.com/en/1.8/releases/1.8/) to start working with me.
 
