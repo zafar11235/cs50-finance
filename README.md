@@ -3,7 +3,7 @@ CS50 FInance Web App's Django Version
 
 The famous CS50 Finance webapp is written entirely by me in Python using Django 1.8
 
-You need Django 1.8 to start working with me.
+You need [Django 1.8k](https://docs.djangoproject.com/en/1.8/releases/1.8/) to start working with me.
 After cloning this repository, run:
 
     python manage.py runserver
