@@ -1,4 +1,6 @@
-<form method = 'POST' action = '' class="form-horizontal">
+<form method = 'POST' action = '' class="form-horizontal col-md-10 center-block"
+style="float: none;
+    margin: 0 auto;" autocomplete="off">
     {% csrf_token %}
 
     <div class="form-group">
@@ -8,7 +10,8 @@
 
         <div class="col-sm-10">
             <input class="form-control input-group-lg input-group-lg"
-            id="id_full_name" type="text" name="full_name" maxlength="100" />
+            id="id_full_name" type="text" name="full_name" maxlength="100"
+            autocomplete="off" placeholder="Tom Hardy"/>
         </div>
 
     {% if form.full_name.errors %}
@@ -31,7 +34,8 @@
 
         <div class="col-sm-10">
             <input class="form-control input-group input-group-lg"
-            id="id_email" type="text" name="email" maxlength="100" />
+            id="id_email" type="text" name="email" maxlength="100" 
+            autocomplete="off" placeholder="tom.hardy@abc.xyz"/>
         </div>
 
     </div>
@@ -48,11 +52,27 @@
         </div>
     {% endif %}
 
+    <div class="form-group">
+
+        <label class="col-sm-2 control-label"
+            for="password">Password</label>
+
+        <div class="col-sm-10">
+            <input class="form-control input-group input-group-lg"
+            id="password" type="password" name="password" maxlength="100" 
+            autocomplete="off" placeholder="***********"/>
+        </div>
+
+    </div>
 
     <div class="form-group">
 
         <div class="col-sm-offset-2 col-sm-10">
-          <button type="submit" class="btn btn-primary">Sign in</button>
+            <button type="submit" class="btn btn-primary">Sign Up</button>   or  
+            <button type="submit" class="btn btn-success">
+            <span class="glyphicon glyphicon glyphicon-log-in" aria-hidden="true">  </span>
+              Login
+            </button> 
         </div>
 
     </div>
