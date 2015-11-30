@@ -23,21 +23,26 @@
 
     <div class="canvas"> 
 
-      <div class="navbar navbar-default navbar-fixed-top">
-        <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-recalc="false" data-target=".navmenu" data-canvas=".canvas">
-        <!-- DELETE data-autohide = false for auto close-->
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
 
       {% include 'main-jumbotron.html' %}
+
+      <div >
+        <div class="conatiner">
+            <nav class="navbar navbar-default navigation" id="navbar-id">
+              <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-recalc="false" data-target=".navmenu" data-canvas=".canvas">
+              <!-- DELETE data-autohide = false for auto close-->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </nav>
+          </div>
+      </div>
 
 
 
       <div class="container" id="signup">
-        <div class="col-md-10 ">
+        <div class="col-xs-offset-2 col-md-10 ">
 
 
         <div class="page-header">
@@ -58,22 +63,24 @@
 
       {% include 'info.html' %}
 
-
       {% include 'footer.html' %}
+
+
 
     </div><!-- /.canvas -->
 
 
-
   </body>
-
 
   <script src="{% static 'js/jquery-2.1.4.js' %}"></script>
   <script src="{% static 'js/jasny-bootstrap.min.js' %}"></script>
   <script src="{% static 'js/bootstrap.min.js' %}"></script>
   <script src="{% static 'js/jquery.scrollTo.min.js' %}"></script>
   <script src="{% static 'js/jquery.localScroll.min.js' %}"></script>
+  <script src="{% static 'js/easing.js' %}"></script>
+  <script src="{% static 'js/totop.js' %}"></script>
   <script src="{% static 'js/script.js' %}"></script>
+
   
 
 </html>
