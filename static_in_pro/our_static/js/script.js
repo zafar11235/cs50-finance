@@ -1,36 +1,4 @@
-jQuery(function( $ ){
-
-	$.localScroll({
-		duration:500
-	});
-});
-
-
-
- $(document).ready(function() {
-	function setHeight() {
-		windowHeight = $(window).innerHeight();
-		$('.main-jumbotron').css('min-height', windowHeight);
-		};
-		setHeight();
-
-		$(window).resize(function() {
-		setHeight();
-		});
-
-		function setArrowHeight() {
-		jumboHeight = $('.main-jumbotron').innerHeight();
-		$('.arrow').css('top', jumboHeight-50);
-		};
-		setArrowHeight();
-
-		$(window).resize(function() {
-		setArrowHeight();
-		});
-
-});
-
-
+// to Top Link
 $(document).ready(function() {
 	
 	var defaults = {
@@ -43,22 +11,15 @@ $(document).ready(function() {
 	
 	$().UItoTop({ easingType: 'easeOutQuart' });
 	
-});       
-$(document).ready(function() {
-    var navoffeset = $(".navigation").offset().top;
-    $(window).scroll(function() {
-        var scrollpos = $(window).scrollTop();
-        //var scrollpos= $(window).innerHeight();
-        if (scrollpos >= navoffeset) {
-            $(".navigation").addClass("fixed");
-
-        } else {
-            $(".navigation").removeClass("fixed");
-        }
-    });
-
 });
 
+
+// Local Scroll slow movement
+jQuery(function( $ ){
+	$.localScroll({
+		duration:500,
+	});
+});
 
 
 

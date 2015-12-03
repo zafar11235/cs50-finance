@@ -21,13 +21,13 @@
             containerIDhash = '#' + settings.containerID,
             containerHoverIDHash = '#'+settings.containerHoverID;
 		
-		$('.canvas').append('<a href="#" id="'+settings.containerID+'">'+settings.text+'</a>');
+		$('.canvas').append('<a href="#" id="'+settings.containerID+'">' + '<i class="fa fa-chevron-circle-up  fa-3x">'+'</i></a>');
 		$(containerIDhash).hide().on('click.UItoTop',function(){
 			$('html, body').animate({scrollTop:0}, settings.scrollSpeed, settings.easingType);
 			$('#'+settings.containerHoverID, this).stop().animate({'opacity': 0 }, settings.inDelay, settings.easingType);
 			return false;
 		})
-		.prepend('<span id="'+settings.containerHoverID+'"></span>')
+		.prepend('<i class="fa fa-angle-double-down fa-3x" id='+settings.containerHoverID+'"></i>')
 		.hover(function() {
 				$(containerHoverIDHash, this).stop().animate({
 					'opacity': 1
