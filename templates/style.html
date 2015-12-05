@@ -1,6 +1,22 @@
 {% load staticfiles %}
 <style>
 
+@font-face {
+    font-family: 'roboto';
+    src: url("{% static 'fonts/Roboto-Regular.ttf'%}");
+}
+
+@font-face {
+    font-family: opensans;
+    src: url("{% static 'fonts/OpenSans-Regular.ttf'%}");
+}
+
+
+body
+{
+	font-family: 'opensans';
+}
+
 .navbar
 {
 	box-shadow: none;
@@ -95,15 +111,20 @@
 	padding-top: 10%;
 	margin-top: 0px;
 	margin-bottom: 0px !important;
-	/*adding-bottom: 5%;*/
+/*	padding-bottom: 5%;*/
+	-wekit-display: flex;
+	-webkit-align-items: center;
 }
+
 
 .signup-jumbotron
 {
 	padding-top: 15%;
 	margin-top: 0px;
 	margin-bottom: 0px !important;
-	/*padding-bottom: 30%;*/
+/*	padding-bottom: 15%;*/
+	-wekit-display: flex;
+	-webkit-align-items: cente
 }
 
 .info-jumbotron
@@ -112,6 +133,8 @@
 	margin-top: 0px;
 	margin-bottom: 0px !important;
 	/*padding-bottom: 30%;*/
+	-wekit-display: flex;
+	-webkit-align-items: cente
 }
 
 .main-button{
@@ -215,13 +238,13 @@ body
   height: 100%;
   position: absolute;
   top: 200%;
-  background-color: hsl(350, 92%, 59%);
+  background-color: rgb(156, 166, 220);
 }
 
 
-.navmenu
-{
-	background-color: #ff9800;
+.navmenu {
+    background-color: #FFB13F;
+    font-family: 'roboto'
 }
 
 
@@ -237,7 +260,7 @@ body
 
 .arrow-div
 {
-	margin-top: 10%;
+	margin-top: 14%;
 	/*top: 80% !important;*/
 }
 
